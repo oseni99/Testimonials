@@ -91,3 +91,54 @@ img {
   background-color: hsl(0, 0%, 100%);
   opacity: 0.8;
 }
+
+@media screen and (min-width: 768px) {
+  .card {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 25% 25% 25% auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "dw dw jw kw"
+      "jh pa pa kw";
+    gap: 1rem;
+    place-content: center;
+  }
+  .card-one {
+    grid-area: dw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .card-two {
+    grid-area: jw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .card-three {
+    grid-area: jh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .card-four {
+    grid-area: pa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .card-five {
+    grid-area: kw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .card-info__details {
+    padding-top: 0;
+  }
+  .card-info__header {
+    padding: 0;
+    padding-bottom: 0.5rem;
+  }
+}
