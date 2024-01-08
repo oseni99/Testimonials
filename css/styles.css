@@ -93,6 +93,11 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+
   .card {
     display: grid;
     place-content: center;
@@ -102,7 +107,6 @@ img {
       "dw dw jw kw"
       "jh pa pa kw";
     gap: 1rem;
-    place-content: center;
   }
   .card-one {
     grid-area: dw;
